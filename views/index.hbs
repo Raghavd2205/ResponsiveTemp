@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+   
+  </head>
+  <body>
+   <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" action="/app.js">
+              <input class="form-control me-2 text-light bg-dark" id="txt" placeholder="Type City Name to find Weather" value="Katni">
+              <button class="btn btn-outline-dark" id="submit1">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   </section>
+
+   <section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1611832197549-ff910be125dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" class="d-block w-100" alt="..." width="1100" height="400">
+            
+            
+            <div class="carousel-caption ">
+              <h5>Hot May Summer !!</h5>
+              <p>Delhi recorded highest temperature of this year</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1589394913966-620f6216b63e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" class="d-block w-100" alt="..." width = "1100" height="400">
+            <div class="carousel-caption">
+              <h5>Cool Cool Manali</h5>
+              <p>Manali recorded lowest temperature of country</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1607624451687-5471a43a58d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80" class="d-block w-100" alt="..." wodth = "1100" height="400">
+            
+            <div class="carousel-caption">
+              <h5>Maldives</h5>
+              <p>Sun rises after 7 days in Maldives</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </section>
+
+   <section class="bg-primary">
+     <article class = "py-5 text-center text-white">
+        <div>
+          <h1 id="kt">Katni IN</h1>
+          <p1 id="date">Wed|Apr 29|10:40AM</p1>
+          <h2 id="tem">37°C</h2>
+          <h3 id="tem2"> Min 35°C | Max 40°C</h3>
+          
+        </div>
+      
+     </article>
+     <section class = "bg-dark">
+       
+     </section>
+       
+     
+   
+   </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script>
+      var currdate = document.getElementById("date");
+      var curricon = document.getElementById("icon");
+      var txtt = document.getElementById("txt");
+      var sbmt = document.getElementById("submit1");
+      var tema = document.getElementById("tem");
+      var kta = document.getElementById("kt");
+      var temp2a = document.getElementById("tem2");
+      console.log(txtt.value);
+     
+      const getqu = async() =>{
+          let cityname = txtt.value;
+          console.log(cityname);
+          
+  
+          try{
+              const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=metric&appid=f9a7c146f0b9831507f94ae69a5c25e7`;
+              const data = await fetch(api);
+               const realdata = await data.json();
+                  const xx = [realdata]
+               console.log(xx[0]);
+              kta.innerText =  `${xx[0].name},${xx[0].sys.country}`;
+              tema.innerText =  `${xx[0].main.temp}°C` ; 
+              temp2a.innerText =  `Min ${xx[0].main.temp_min}°C | Max ${xx[0].main.temp_max}°C`;
+          }
+          catch(error){}
+      }
+      getqu();
+      sbmt.addEventListener("click",getqu);
+      
+      const getcurrentDay = () =>{
+          var day = [
+              "Sun",
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thr",
+              "Fri",
+              "Sat",
+              
+          ];
+          var now = new Date();
+          var dday = (day[now.getDay()]);
+          return dday;
+      } 
+      const getcurrentMon = ()=>{
+          var month = [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+          ]
+          var now1 = new Date();
+          var mon = month[now1.getMonth()];
+          var dat = now1.getDate();
+          var abd = `${mon} ${dat}`;
+          console.log(abd);
+          return abd;
+      }
+      
+      const getcurrentTime = ()=>{
+          var now2 = new Date();
+          var hr = now2.getHours();
+          var min = now2.getMinutes();
+          var sa = "AM";
+
+          if(hr>11){
+              sa = "PM";
+              if(hr>12){
+                  hr = hr-12;
+              }
+          }
+          if(min<10){
+              var ddp = `${hr}:0${min}${sa}`
+          }
+          else{
+              var ddp = `${hr}:${min}${sa}`
+          }
+          
+          console.log(ddp);
+          return ddp;
+      }
+      setInterval(()=>{
+      currdate.innerText = getcurrentDay() +"|"+ getcurrentMon() +"|"+ getcurrentTime();
+
+  
+      },1000);
+
+
+  </script>
+   
+    
+  </body>
+</html>
